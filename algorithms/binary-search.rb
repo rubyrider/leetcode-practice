@@ -30,8 +30,6 @@ module Algorithms
       if target < mid_value
         look_up(numbers, target, min, mid-1)
       elsif target > mid_value
-        min = mid
-
         look_up(numbers, target, mid + 1, max)
       else
         -1
