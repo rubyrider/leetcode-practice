@@ -12,4 +12,6 @@ bundle install
 bundle exec play
 ```
 
+### Algorithm
 1. [Algorithms::Binary Search](algorithms/binary-search.rb)
+1. [Algorithms::InsertionSort](algorithms/insertion-sort.rb)
