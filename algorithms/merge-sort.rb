@@ -9,12 +9,15 @@ module Algorithms
     def merge_sort(numbers)
       length = numbers.size
 
-      return numbers if length == 1
+      return numbers if length <= 1
 
       mid = length/2
 
-      left_numbers = merge_sort(numbers[0..mid-1])
-      right_numbers = merge_sort(numbers[mid..length-1])
+      left_numbers = numbers[0..mid-1]
+      right_numbers = numbers[mid..length-1]
+
+      left_numbers = merge_sort(left_numbers)
+      right_numbers = merge_sort(right_numbers)
 
       merge(left_numbers, right_numbers)
     end
